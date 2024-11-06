@@ -9,6 +9,9 @@ const Recipe = require("./models/recipe.models");
 
 initializeDb();
 
+app.get('/',(req,res)=>{
+    res.send('Recipies backend app.')
+})
 
 app.get("/recipes",async(req,res)=>{
   try{
